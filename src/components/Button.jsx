@@ -10,8 +10,8 @@ const StyledButton = styled.button`
   font-size: 16px;
 `;
 
-const Button = () => {
-  return <StyledButton></StyledButton>;
+const Button = (props) => {
+  return <StyledButton>{props.title}</StyledButton>;
 };
 
 export default Button;
