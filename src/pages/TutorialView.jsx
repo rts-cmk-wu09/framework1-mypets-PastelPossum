@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useLoaderData } from "react-router-dom";
 import styled from "styled-components";
+import Button from "../components/Button";
 
 const StyledHeader = styled.h1`
   font-size: 20px;
@@ -16,15 +17,15 @@ const StyledP = styled.p`
   text-align: center;
 `;
 
-const StyledButton = styled.button`
-  background-color: #57419d;
-  border-radius: 32px;
-  border: none;
-  color: white;
-  width: 327px;
-  height: 44px;
-  font-size: 16px;
-`;
+// const StyledButton = styled.button`
+//   background-color: #57419d;
+//   border-radius: 32px;
+//   border: none;
+//   color: white;
+//   width: 327px;
+//   height: 44px;
+//   font-size: 16px;
+// `;
 
 const TutorialView = () => {
   const TutorialViewData = useLoaderData();
@@ -35,7 +36,7 @@ const TutorialView = () => {
         Taking care of a pet is my favorite, it helps me to gaimr stress and
         fatigue.
       </StyledP>
-      <StyledButton>skip</StyledButton>
+      <Button title="Skip" />
     </>
   );
 };
